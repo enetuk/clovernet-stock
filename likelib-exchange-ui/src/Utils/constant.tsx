@@ -1,0 +1,1 @@
+export const UI_DECIMALS_DISPLAYED_ORDER_SIZE = 4;

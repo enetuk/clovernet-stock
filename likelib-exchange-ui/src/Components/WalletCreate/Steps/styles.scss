@@ -1,0 +1,33 @@
+.body-wrap {
+    padding: 64px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+
+    .divider {
+        margin: 16px 0;
+        color:rgba(255, 255, 255, 0.1);
+        font-family: Roboto;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    background: #1b1b1b;
+    width: 100%;
+    border: 1px solid #1b1b1b;
+    border-radius: 4px;
+    margin-top: 8px;
+    min-height: 42px;
+    
+  }
+
+  input {
+    background: #1b1b1b;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+

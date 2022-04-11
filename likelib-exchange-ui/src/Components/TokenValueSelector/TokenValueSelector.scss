@@ -1,0 +1,55 @@
+.TokenValueSelector {
+  border-radius: 6px;
+  font-family: Roboto;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 50%;
+  @media only screen and (max-width: 420px) {
+    width: 80%;
+  }
+  box-sizing: border-box;
+  &__Title {
+    color: white;
+  }
+  &__TokenInput {
+    position: relative;
+    width: 100%;
+
+    & input {
+      width: 100%;
+      padding-right: 32px;
+    }
+  }
+  &__MaxLabel {
+    position: absolute;
+    font-size: 12px;
+    color: #dedede;
+    cursor: pointer;
+    height: 16px;
+    top: 50%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      transform: translate(-50%, calc(-50% + 1px));
+    }
+  }
+
+  &__AvailableAmount {
+    font-size: 14px;
+    color: white;
+  }
+
+  &__Available {
+    color: #b3b3b3;
+  }
+}

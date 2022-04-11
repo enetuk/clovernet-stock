@@ -1,0 +1,21 @@
+.cancel-btn {
+  cursor: pointer;
+  padding: 2px 4px;
+  background: none;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 0 4px;
+  padding: 4px 8px;
+
+  &:active {
+    transform: translateY(1px);
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.1;
+}

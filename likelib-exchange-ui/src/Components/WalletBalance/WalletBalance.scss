@@ -1,0 +1,24 @@
+.WalletBalance {
+  width: 100%;
+  height: 132px;
+  background-color: #202123;
+  color: white;
+  .mkr-balance {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0px 17px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      color: #ffffff;
+      margin-top: 17px;
+    }
+  }
+
+  &__Head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,60 @@
+.content {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  width: 586px;
+  @media only screen and (max-width: 600px) {
+    width: 90vw;
+  }
+}
+
+.body {
+  position: relative;
+  background: rgb(41, 50, 73);
+  border-radius: 8px;
+}
+.closeBtn {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 16px;
+    width: 2px;
+    background-color: rgb(144, 160, 195);
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(48, 57, 80, 0.59);
+}

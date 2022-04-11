@@ -1,0 +1,37 @@
+.Home-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 16px;
+}
+.Home-wallet {
+    grid-column: 1 / span 3;
+}
+.Home-orderbook {
+    grid-column: 4 / span 3;
+}
+.Home-chart {
+    grid-column: 7 / span 6;
+    display: grid;
+    grid-template-rows: 1fr 0.8fr;
+}
+
+@media only screen and (max-width: 930px) {
+    .Home-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-row-gap: 16px;
+        grid-column-gap: 0px;
+    }
+
+    .Home-wallet {
+        grid-column: 1;
+    }
+    .Home-orderbook {
+        grid-column: 1;
+    }
+    .Home-chart {
+        grid-column: 1;
+        overflow: hidden;
+    }
+}

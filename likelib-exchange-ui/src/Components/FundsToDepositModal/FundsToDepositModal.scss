@@ -1,0 +1,78 @@
+.FundsToDepositModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  & > ul {
+    color: white;
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 4px;
+  }
+  &__Title {
+    color: white;
+    font-family: Roboto;
+  }
+  &__Controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+  }
+  &__ProcessingMessage {
+    color: #fff;
+    font-family: Roboto;
+  }
+
+  &__TokenSelector {
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    width: 50%;
+  }
+
+  &__Icon {
+    cursor: pointer;
+  }
+  &__Address {
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    gap: 8px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 420px) {
+      width: auto;
+      border: 0;
+    }
+  }
+
+  &__TextCopied {
+    color: rgb(60, 179, 79);
+    margin-right: 4px;
+    animation-name: tick-animation;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+  }
+
+  &__TextCopyIcon {
+    color: #dedede;
+    margin-right: 4px;
+
+  }
+}

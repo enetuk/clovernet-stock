@@ -1,0 +1,55 @@
+.chart {
+  &-container {
+    height: 450px;
+    color: white;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  &-empty-container {
+    position: absolute;
+    z-index: 5;
+    height: 450px;
+    width: 100%;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family: Roboto;
+    background-color: #202123;
+    border: 1px solid #000000;
+    border-radius: 6px;
+  }
+
+  &-toolbar {
+    display: flex;
+    height: 40px;
+    margin-top: 8px;
+
+    &__button {
+      margin: 0px 5px;
+      background-color: black;
+      border: none;
+      outline: none;
+      color: white;
+      height: 40px;
+      width: 40px;
+      border-radius: 5px;
+      font-size: 18px;
+      font-style: Roboto;
+      cursor: pointer;
+
+      &._active {
+        background-color: rgb(60, 179, 79);
+      }
+    }
+  }
+}
+

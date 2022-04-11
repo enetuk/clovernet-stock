@@ -1,0 +1,5 @@
+{
+    "id": "/base58Schema",
+    "type": "string",
+    "pattern": "[1-9A-HJ-NP-Za-km-z]{20}$"
+}

@@ -1,0 +1,28 @@
+.title {
+  padding: 16px 32px;
+  color: white;
+  font-family: Roboto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  @media only screen and (max-width: 360px) {
+    border-bottom: 0;
+  }
+}
+
+.controls {
+  padding: 16px 32px;
+  font-family: Roboto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media only screen and (max-width: 360px) {
+    border-top: 0;
+  }
+}
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 32px;
+}

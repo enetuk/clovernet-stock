@@ -1,0 +1,92 @@
+.OrderBook {
+  width: 100%;
+  background-color: #202123;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  .trade-list {
+    height: 410px;
+    overflow: auto;
+  }
+
+  .table-index {
+    margin-top: 8px;
+    padding: 0px 17px;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+    .trade-size,
+    .price-weth,
+    .my-size {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      text-align: right;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #b9b9b9;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .trade-size {
+      width: 30%;
+    }
+    .my-size {
+      width: 30%;
+    }
+    .price-weth {
+      width: 40%;
+    }
+  }
+
+  .trade-list-item {
+    margin-top: 8px;
+    padding: 0px 17px;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    .trade-size {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .my-size {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #dedede;
+    }
+    .price-weth {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #ff6534;
+    }
+  }
+
+  .color-white {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
